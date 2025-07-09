@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../Sprint3=web_project_library_es"
+	},
+	{
+		"path": "../web_project_2_starter-kit"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "web_project_coffeeshop"
+  }
+}

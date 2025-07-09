@@ -58,17 +58,17 @@
         />
 
         <div class="header__footer">
-          <ul class="header__footer-list">
-            <li class="header__footer-list-item">Horario:</li>
-            <li class="header__footer-list-item">
+          <div class="header__footer-list">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
               Lunes a Viernes (de 10:00h a 19:00h)
-            </li>
-            <li class="header__footer-list-item">
+            </p>
+            <p class="header__paragraph">
               Sábados y Domingos (de 11:00h a 18:00h)
-            </li>
-          </ul>
+            </p>
+          </div>
 
-          <p class="header__footer header__footer-address">
+          <p class="header__paragraph header__paragraph_type_address">
             Avenida del Éxito 200, Ciudad Triple Peaks
           </p>
         </div>
@@ -91,12 +91,11 @@
             <div class="recipes__videos-item">
               <div class="recipes__videos-item-aeropress">
                 <iframe
-                  class="recipes__videos-iframe"
+                  class="recipes__iframe"
                   width="874"
                   height="492"
                   src="https://www.youtube.com/embed/j6VlT_jUVPc"
                   title="The Ultimate AeroPress Technique (Episode #3)"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
@@ -110,12 +109,11 @@
 
               <div class="recipes__videos-item-francesa">
                 <iframe
-                  class="recipes__videos-iframe"
+                  class="recipes__iframe"
                   width="874"
                   height="492"
                   src="https://www.youtube.com/embed/st571DYYTR8"
                   title="La mejor técnica de prensa francesa"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
@@ -129,7 +127,66 @@
           </div>
         </section>
 
-        <section class="reservation"><!--FormularioReserva una mesa--></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="nombre">Nombre *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre"
+                required
+              />
+
+              <label class="form__label" for="comensales"
+                >Número de comensales *</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="comensales"
+                name="comensales"
+                placeholder="1-8"
+                required
+              />
+
+              <label class="form__label" for="fecha-y-hora"
+                >Fecha y hora *</label
+              >
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="fecha-y-hora"
+                name="fecha-y-hora"
+                required
+              />
+
+              <label class="form__label" for="email"
+                >Tu correo electrónico *</label
+              >
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+
+              <button type="submit" class="form__button">
+                Reservar una mesa
+              </button>
+
+              <label class="form__label form__label_terms">
+                <input type="checkbox" class="form__checkbox" required />
+                Acepto los términos de uso
+              </label>
+            </fieldset>
+          </form>
+        </section>
       </main>
 
       <footer class="footer"></footer>
