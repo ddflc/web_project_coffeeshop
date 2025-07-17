@@ -1,0 +1,112 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 720px;
+  background-color: #0a2850;
+  background-image: url("/images/background_recipes.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  max-height: 800px;
+  min-height: 720px;
+  background-color: #ffffff;
+  background-image: url("/images/background_header.svg");
+  background-size: cover;
+}
+
+.header__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 500;
+  margin-top: 183px;
+  max-width: 709px;
+  margin: 0;
+}
+
+.span-accent {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 58px;
+  line-height: 72px;
+  font-style: italic;
+  color: #2f80ed;
+  display: block;
+  max-width: 1140px;
+  padding-top: 183px;
+  margin-left: 80px;
+}
+
+.header__title-second-line {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  margin-left: 80px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.header__description {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 683px;
+  margin-left: 80px;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+.header__footer {
+  max-width: 1140px;
+  color: #838383;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 40px;
+}
+
+.header__footer-list {
+  display: flex;
+  flex-direction: column;
+}
+.header__paragraph {
+  margin-bottom: 5px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #838383;
+  margin: 5px 0;
+}
+
+.header__paragraph_type_address {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+}
